@@ -1,0 +1,8 @@
+To run the tests from command line:
+gradle clean test
+
+FizzBuzzDemo.java is provided to demonstrate the implemntation.
+
+Few words about the implementation:
+
+I have used git to give better idea of the implmentation steps I have taken. I have decided to start with guidance/acceptance test as it helps to keep focus on what I am trying to achieve. There are no interfaces as I believe if there is only a single implementation we do not need them. We can introduce them later if multiple variations of a service or game appears. Also I decided to minimise API and what package exposes therefore some of the components are package private as they are more of an implementation detail and do not have meaning outside FizzBuzz game. 
