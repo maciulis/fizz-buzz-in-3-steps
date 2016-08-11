@@ -14,9 +14,9 @@ public class OutputDecisionServiceTest {
 
     @Test
     public void should_give_fizz_for_multiples_of_3() {
-        assertThat(new OutputDecisionService().forGiven(3), equalTo("fizz"));
         assertThat(new OutputDecisionService().forGiven(6), equalTo("fizz"));
         assertThat(new OutputDecisionService().forGiven(9), equalTo("fizz"));
+        assertThat(new OutputDecisionService().forGiven(12), equalTo("fizz"));
     }
 
     @Test
@@ -29,7 +29,13 @@ public class OutputDecisionServiceTest {
     @Test
     public void should_give_fizzbuzz_for_multiples_of_3_and_5() {
         assertThat(new OutputDecisionService().forGiven(15), equalTo("fizzbuzz"));
-        assertThat(new OutputDecisionService().forGiven(30), equalTo("fizzbuzz"));
         assertThat(new OutputDecisionService().forGiven(45), equalTo("fizzbuzz"));
+    }
+
+    @Test
+    public void should_give_lucky_for_numbers_containing_3() {
+        assertThat(new OutputDecisionService().forGiven(3), equalTo("luck"));
+        assertThat(new OutputDecisionService().forGiven(13), equalTo("luck"));
+        assertThat(new OutputDecisionService().forGiven(30), equalTo("luck"));
     }
 }
