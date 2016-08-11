@@ -22,13 +22,9 @@ public class FizzBuzzGuidanceTest {
     private String expectedOutput() {
         return "1 2 luck 4 buzz fizz 7 8 fizz buzz 11 fizz luck 14 fizzbuzz 16 17 fizz 19 buzz \n" +
                 "fizz: 4\n" +
-                "\n" +
                 "buzz: 3\n" +
-                "\n" +
                 "fizzbuzz: 1\n" +
-                "\n" +
                 "luck: 2\n" +
-                "\n" +
-                "number: 10";
+                "number: 10\n";
     }
 }
