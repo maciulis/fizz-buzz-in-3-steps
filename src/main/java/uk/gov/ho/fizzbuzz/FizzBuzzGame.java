@@ -21,7 +21,7 @@ public class FizzBuzzGame {
         try {
             output.write(outputDecisionService.forGiven(number) + " ");
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new FizzBuzzException("Unable to write output", e);
         }
     }
 }
