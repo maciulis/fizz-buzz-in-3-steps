@@ -1,10 +1,11 @@
+package uk.gov.ho.fizzbuzz;
+
 import org.junit.Test;
 
-import javax.lang.model.element.NestingKind;
 import java.io.StringWriter;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.mock;
+import static org.hamcrest.core.IsEqual.equalTo;
+import static org.junit.Assert.assertThat;
 
 public class FizzBuzzGuidanceTest {
 

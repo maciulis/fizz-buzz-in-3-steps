@@ -5,6 +5,7 @@ repositories {
 }
 
 dependencies {
+    testCompile 'org.hamcrest:hamcrest-all:latest.release'
     testCompile 'junit:junit:latest.release'
     testCompile 'org.mockito:mockito-all:latest.release'
 }
